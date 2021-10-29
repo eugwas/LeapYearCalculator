@@ -10,7 +10,8 @@ public class Main {
         boolean hasNextInt = scanner.hasNextInt();
         if (hasNextInt) {
             int number = scanner.nextInt();
-            System.out.println("Is leap year = " + LeapYear.isLeapYear(number));
+            LeapYear leapYear = new LeapYear(number);
+            System.out.println("Is leap year = " + leapYear.isLeapYear(number));
         } else {
             System.out.println("Invalid number");
         }
